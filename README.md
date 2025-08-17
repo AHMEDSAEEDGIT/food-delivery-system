@@ -8,18 +8,17 @@ The goal is to extract **requirements, features, and functionalities** for each 
 
 ---
 
-## 📂 Repository Structure
-restaurant-ordering-system/
-│
-├── README.md
-│
-├── docs/
-│ ├── requirements/ # Features & functionalities of each module
-│ ├── diagrams/ # Use case, sequence, and class diagrams
-│ └── srs/ # System Requirement Specification (optional)
-│
-└── src/ # Source code (later in the project)
-└── backend
+## 📑 Table of Contents
+
+- **README.md** – Project overview & main documentation  
+
+- **docs/** – Project documentation  
+  - **requirements/** – Features & functionalities of each module  
+  - **diagrams/** – Use case, sequence, and class diagrams  
+  - **srs/** – System Requirement Specification (optional)  
+
+- **src/** – Source code (future implementation)  
+  - **backend/** – Server-side logic & APIs    
 
 ---
 ## 📦 Modules & Features Overview
