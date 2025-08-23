@@ -26,7 +26,7 @@ Customers can apply these offers during checkout to reduce the total amount.
 - Customers can view available offers in the app/website
 - Offers visible on:
   - Checkout page
-  - Product/restaurant listing (highlighted if applicable)
+  - Product/restaurant listing (highlighted optional)
 
 ---
 
