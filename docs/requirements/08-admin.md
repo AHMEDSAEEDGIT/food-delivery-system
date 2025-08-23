@@ -73,4 +73,4 @@ Admins act as super users with privileges across all other modules.
 
 - Admins do not directly place orders or make payments
 - They oversee and resolve issues across Customer, Restaurant, Payment, and Delivery Modules
-- The module ensures compliance, smooth operations, and trust in
+- The module ensures compliance, smooth operations, and trust 
