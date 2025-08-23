@@ -38,7 +38,7 @@ It ensures restaurants can update their offerings in real time, and customers ca
 
 ### 4. Customer Browsing (Customer-facing)
 - **View All Restaurants:** Customers can browse restaurants available in their area.
-- **Search Restaurants:** Search by name, cuisine, location, or tags.
+- **Search Restaurants:** Search by name, restaurant category, location, or tags.
 - **Search Menu Items:** Search dishes globally (across restaurants) or within a restaurant.
 - **Filters & Sorting:**
   - By rating ⭐
@@ -60,4 +60,4 @@ It ensures restaurants can update their offerings in real time, and customers ca
 
 - This module supports both Admin/Restaurant Owners (management) and Customers (browsing & discovery).
 - Ensures real-time menu updates are visible to customers immediately.
-- Admin dashboard may include extended analytics (future
+- Admin dashboard may include extended analytics (future)
