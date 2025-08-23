@@ -57,4 +57,3 @@ Customers can apply these offers during checkout to reduce the total amount.
 
 - Keep offers simple: percentage or flat discounts only
 - No need for complex “loyalty points” or “bundle offers”
-- Works closely with Checkout and
