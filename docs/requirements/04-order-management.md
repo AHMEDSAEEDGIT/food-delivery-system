@@ -91,5 +91,5 @@ This module also maintains an order history and provides a detailed breakdown of
   - **Cart Management Module** (checkout → place order)
   - **Checkout & Payment Module** (order confirmation requires payment validation)
   - **Order & Delivery Tracking Module** (status updates & tracking)
--- - For prototype stage → can be session-based order logs
--- - For production → requires database persistence with relational schema (orders, order_items, status_updates)
+// - For prototype stage → can be session-based order logs
+// - For production → requires database persistence with relational schema (orders, order_items, status_updates)
