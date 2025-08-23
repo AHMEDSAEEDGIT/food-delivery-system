@@ -89,5 +89,3 @@ Access control ensures separation of responsibilities (Customers cannot access A
 
 - **Dependencies:** This module is required for all others (Order Management, Payment, Cart, Dashboard).
 - **Security Considerations:** Must follow OWASP best practices for authentication and authorization.
-
-✅ This way, we now have a balanced description covering Customer and Admin authentication flows, and we’ve integrated the missing points you listed (logout, enable/disable accounts, OTP verification,
