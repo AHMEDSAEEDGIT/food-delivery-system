@@ -49,4 +49,4 @@ It helps track performance, monitor orders, and make data-driven decisions.
 ## 📌 Notes
 
 - Dashboards are read-only analytics, not management tools
-- They rely on Order, Payment, Customer, and Rating modules for data
+- They rely on Order, Payment, Customer modules for data
