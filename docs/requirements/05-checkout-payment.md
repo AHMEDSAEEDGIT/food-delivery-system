@@ -95,4 +95,3 @@ It coordinates with the Payment Gateway and Inventory System to ensure payment s
 
 **Dependencies:**
 - Relies on Cart Module for order items
-- Supports
