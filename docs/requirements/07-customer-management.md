@@ -44,15 +44,8 @@ It also connects with other modules (Orders, Payments, Delivery) to give a perso
 
 ---
 
-### 5. Account Deactivation
-- Customers can temporarily or permanently deactivate their account.
-- Data handling:
-  - Orders in progress must finish before deactivation
-  - Customer data may be anonymized after permanent deletion (GDPR compliance optional)
 
----
-
-### 6. Ratings & Comments
+### 5. Ratings & Comments
 - Customers can provide feedback after an order:
   - Rate food quality, delivery time, and overall experience
   - Add comments for restaurant/delivery person
@@ -68,4 +61,3 @@ It also connects with other modules (Orders, Payments, Delivery) to give a perso
   - **Payment Module** → preferred payment settings
   - **Delivery Module** → address management
  
-- Avoids duplication by referencing, not re-

@@ -92,6 +92,6 @@ It covers item selection, cart persistence, item editing, vouchers, cart managem
 ## 📌 Notes
 
 - This module is tightly linked with:
-  - **Browsing Module** (to add items to cart)
-  - **Checkout Module** (to place the order)
+  - **Restaurant & Menu Management** (to add items to cart)
+  - **Checkout & Payment Module** (to place the order)
 - Persistence can be implemented via **local storage/session** for prototype stage, and **database storage**
