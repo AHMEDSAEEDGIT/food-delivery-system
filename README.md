@@ -142,11 +142,11 @@ On success, an order is created, stored, and both customer and restaurant receiv
 
 
 
-**Artifacts:**  
-- [📐 Sequence Diagram](docs/diagrams/use-cases/place-order/sequence-diagrams/place-order-sequence.png)  
-- [🗂️ Flowchart](docs/diagrams/use-cases/place-order/flowcharts/checkout-order-flowchart.png)  
-- [💻 Pseudo Code](docs/diagrams/use-cases/place-order/pseudo-code.md)  
-- [🗄️ ERD](docs/diagrams/use-cases/place-order/entity-diagrams/place-order-erd.png)  
+// **Artifacts:**  
+// - [📐 Sequence Diagram](docs/diagrams/use-cases/place-order/sequence-diagrams/place-order-sequence.png)  
+// - [🗂️ Flowchart](docs/diagrams/use-cases/place-order/flowcharts/checkout-order-flowchart.png)  
+// - [💻 Pseudo Code](docs/diagrams/use-cases/place-order/pseudo-code.md)  
+// - [🗄️ ERD](docs/diagrams/use-cases/place-order/entity-diagrams/place-order-erd.png)  
 ---
 
 ## 🎯 Project Goals
