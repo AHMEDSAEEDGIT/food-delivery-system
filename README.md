@@ -113,7 +113,40 @@ The goal is to extract **requirements, features, and functionalities** for each 
 
 
 
+## 📌 Use Cases
 
+This section documents the system’s main use cases.  
+Each use case includes:
+- **Sequence Diagram**
+- **Flowchart**
+- **Pseudo Code**
+- **Entity Relationship Diagram (ERD)**
+
+### 1. Place Order
+**Description:**  
+A customer confirms their cart and places an order.  
+The system validates item availability, delivery address, payment details, and applied vouchers.  
+On success, an order is created, stored, and both customer and restaurant receive confirmation.  
+
+**Artifacts:**  
+- 📐 Sequence Diagram  
+  ![Sequence Diagram](/docs/diagrams/use-cases/place-order/sequence-diagrams/place-order-sequence.png)  
+
+- 🗂️ Flowchart  
+  ![Flowchart](/docs/diagrams/use-cases/place-order/flowcharts/checkout-order-flowchart.png)  
+
+- 💻 [Pseudo Code](docs/diagrams/use-cases/place-order/pseudo-code.md)  
+
+- 🗄️ ERD  
+  ![ERD](/docs/diagrams/use-cases/place-order/entity-diagrams/place-order-erd.png)  
+
+
+
+**Artifacts:**  
+- [📐 Sequence Diagram](docs/diagrams/use-cases/place-order/sequence-diagrams/place-order-sequence.png)  
+- [🗂️ Flowchart](docs/diagrams/use-cases/place-order/flowcharts/checkout-order-flowchart.png)  
+- [💻 Pseudo Code](docs/diagrams/use-cases/place-order/pseudo-code.md)  
+- [🗄️ ERD](docs/diagrams/use-cases/place-order/entity-diagrams/place-order-erd.png)  
 ---
 
 ## 🎯 Project Goals
