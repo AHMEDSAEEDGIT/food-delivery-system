@@ -122,47 +122,32 @@ This document outlines the core Entity-Relationship Diagram (ERD) for the Food D
 
 ## Entity Definitions
 
-
-<style>
-  .module-auth { background-color: #DAE8FC; } /* Light Blue */
-  .module-restaurant { background-color: #FFF2CC; } /* Light Yellow */
-  .module-cart { background-color: #D5E8D4; } /* Light Orange */
-  .module-order { background-color: #E1D5E7; } /* Light Green */
-  .module-delivery { background-color: #E1D5E7; } /* Light Purple */
-  .module-payment { background-color: #FAD9D5; } /* Light Pink */
-  .module-customer { background-color: #FFE6CC; } /* Light Blue 2 */
-  .module-offers { background-color: #B0E3E6; } /* Light Cyan */
-</style>
-
-
-
-
 | Entity | Description | Module |
 | :--- | :--- | :--- |
-| <span class="module-auth">`User`</span> | <span class="module-auth">Central account table for all platform users. Stores login credentials and core profile.</span> | <span class="module-auth">Authentication</span> |
-| <span class="module-auth">`Role`</span> | <span class="module-auth">Lookup table for system roles (e.g., `customer`, `restaurant_owner`, `admin`, `driver`).</span> | <span class="module-auth">Authentication</span> |
-| <span class="module-auth">`UserRole`</span> | <span class="module-auth">Junction table that manages the many-to-many relationship between Users and Roles.</span> | <span class="module-auth">Authentication</span> |
-| <span class="module-auth">`VerificationToken`</span> | <span class="module-auth">Stores secure tokens for account verification emails and password reset requests.</span> | <span class="module-auth">Authentication</span> |
-| <span class="module-restaurant">`Restaurant`</span> | <span class="module-restaurant">Contains all information about a restaurant, including status, location, and operational details.</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`CuisineType`</span> | <span class="module-restaurant">Defines types of food a restaurant can serve (e.g., "Pizza", "Sushi", "Burger").</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`RestaurantCuisine`</span> | <span class="module-restaurant">Junction table linking Restaurants to the CuisineTypes they serve.</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`MenuCategory`</span> | <span class="module-restaurant">A section within a restaurant's menu (e.g., "Appetizers", "Main Courses").</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`MenuItem`</span> | <span class="module-restaurant">The core sellable product offered by a restaurant.</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`MenuItemOptionGroup`</span> | <span class="module-restaurant">Defines a set of choices for a menu item (e.g., "Choose Size").</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-restaurant">`MenuItemOption`</span> | <span class="module-restaurant">An individual choice within an option group (e.g., "Large").</span> | <span class="module-restaurant">Restaurant & Menu</span> |
-| <span class="module-cart">`Cart`</span> | <span class="module-cart">A user's temporary workspace for items before checkout. Locked to a single restaurant.</span> | <span class="module-cart">Cart Management</span> |
-| <span class="module-cart">`CartItem`</span> | <span class="module-cart">An item from the menu added to the cart. Stores a snapshot of the price.</span> | <span class="module-cart">Cart Management</span> |
-| <span class="module-cart">`CartItemOption`</span> | <span class="module-cart">Records the customizations chosen for a cart item. Stores a snapshot of the option details.</span> | <span class="module-cart">Cart Management</span> |
-| <span class="module-order">`Order`</span> | <span class="module-order">The master record of a transaction. Tracks status, amount, and links to involved parties.</span> | <span class="module-order">Order Management</span> |
-| <span class="module-order">`OrderItem`</span> | <span class="module-order">A permanent, immutable snapshot of a purchased menu item at the time of order.</span> | <span class="module-order">Order Management</span> |
-| <span class="module-order">`OrderItemOption`</span> | <span class="module-order">A permanent snapshot of the customizations chosen for an order item.</span> | <span class="module-order">Order Management</span> |
-| <span class="module-delivery">`Driver`</span> | <span class="module-delivery">Profile information for a user with the `driver` role (vehicle, availability).</span> | <span class="module-delivery">Delivery Tracking</span> |
-| <span class="module-delivery">`DeliveryTracking`</span> | <span class="module-delivery">Tracks key timestamps and details for the delivery process.</span> | <span class="module-delivery">Delivery Tracking</span> |
-| <span class="module-payment">`Payment`</span> | <span class="module-payment">Records the attempt to collect payment for an order, including method and status.</span> | <span class="module-payment">Checkout & Payment</span> |
-| <span class="module-payment">`Address`</span> | <span class="module-payment">Stores delivery addresses associated with a user's account.</span> | <span class="module-payment">Checkout & Payment</span> |
-| <span class="module-customer">`Review`</span> | <span class="module-customer">Allows users to leave ratings and comments for a restaurant based on an order.</span> | <span class="module-customer">Customer Management</span> |
-| <span class="module-offers">`PromoCode`</span> | <span class="module-offers">Defines a discount code or promotion with its rules and validity.</span> | <span class="module-offers">Offers & Promotions</span> |
-| <span class="module-offers">`OrderPromoCode`</span> | <span class="module-offers">Links an applied promo code to a specific order and records the discount given.</span> | <span class="module-offers">Offers & Promotions</span> |
+| `User` | Central account table for all platform users. Stores login credentials and core profile. | Authentication |
+| `Role` | Lookup table for system roles (e.g., `customer`, `restaurant_owner`, `admin`, `driver`). | Authentication |
+| `UserRole` | Junction table that manages the many-to-many relationship between Users and Roles. | Authentication |
+| `VerificationToken` | Stores secure tokens for account verification emails and password reset requests. | Authentication |
+| `Restaurant` | Contains all information about a restaurant, including status, location, and operational details. | Restaurant & Menu |
+| `CuisineType` | Defines types of food a restaurant can serve (e.g., "Pizza", "Sushi", "Burger"). | Restaurant & Menu |
+| `RestaurantCuisine` | Junction table linking Restaurants to the CuisineTypes they serve. | Restaurant & Menu |
+| `MenuCategory` | A section within a restaurant's menu (e.g., "Appetizers", "Main Courses"). | Restaurant & Menu |
+| `MenuItem` | The core sellable product offered by a restaurant. | Restaurant & Menu |
+| `MenuItemOptionGroup` | Defines a set of choices for a menu item (e.g., "Choose Size"). | Restaurant & Menu |
+| `MenuItemOption` | An individual choice within an option group (e.g., "Large"). | Restaurant & Menu |
+| `Cart` | A user's temporary workspace for items before checkout. Locked to a single restaurant. | Cart Management |
+| `CartItem` | An item from the menu added to the cart. Stores a snapshot of the price. | Cart Management |
+| `CartItemOption` | Records the customizations chosen for a cart item. Stores a snapshot of the option details. | Cart Management |
+| `Order` | The master record of a transaction. Tracks status, amount, and links to involved parties. | Order Management |
+| `OrderItem` | A permanent, immutable snapshot of a purchased menu item at the time of order. | Order Management |
+| `OrderItemOption` | A permanent snapshot of the customizations chosen for an order item. | Order Management |
+| `Driver` | Profile information for a user with the `driver` role (vehicle, availability). | Delivery Tracking |
+| `DeliveryTracking` | Tracks key timestamps and details for the delivery process. | Delivery Tracking |
+| `Payment` | Records the attempt to collect payment for an order, including method and status. | Checkout & Payment |
+| `Address` | Stores delivery addresses associated with a user's account. | Checkout & Payment |
+| `Review` | Allows users to leave ratings and comments for a restaurant based on an order. | Customer Management |
+| `PromoCode` | Defines a discount code or promotion with its rules and validity. | Offers & Promotions |
+| `OrderPromoCode` | Links an applied promo code to a specific order and records the discount given. | Offers & Promotions |
 ---
 ## 📌 Use Cases
 
