@@ -112,7 +112,7 @@ The goal is to extract **requirements, features, and functionalities** for each 
   
 
 ---
-# Database Schema Overview
+# Database Schema Overview 
 
 This document outlines the core Entity-Relationship Diagram (ERD) for the Food Delivery System, detailing the main entities and their purposes.
 
