@@ -10,7 +10,7 @@ The goal is to extract **requirements, features, and functionalities** for each 
 
 ## 📑 Table of Contents
 
-- **README.md** – Project overview & main documentation  
+- **README.md** – Project overview & main documentation   
 
 - **docs/** – Project documentation  
   - **requirements/** – Features & functionalities of each module  
