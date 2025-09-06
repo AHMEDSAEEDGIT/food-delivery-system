@@ -107,7 +107,7 @@ The goal is to extract **requirements, features, and functionalities** for each 
       - Customer feedback overview.
    
    - **Admin Dashboard**
-      - Platform performance (orders, users, revenue).
+      - Platform performance (orders, users, revenue). 
       - Restaurant performance monitoring.
   
 
